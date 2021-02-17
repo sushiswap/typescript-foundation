@@ -11,14 +11,8 @@
     "prepublish": "tsc",
     "test": "jest"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "lint-staged": {
-    "*.ts": [
+    "**/*.ts": [
       "eslint --cache --fix",
       "jest --bail --passWithNoTests --findRelatedTests",
       "prettier --write"

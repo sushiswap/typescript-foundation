@@ -1,2 +1,2 @@
-// Export modules
+// Export
 export { hello } from "./hello";
